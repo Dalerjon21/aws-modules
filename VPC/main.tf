@@ -59,7 +59,7 @@ gateway_id = aws_nat_gateway.NAT_gateway.id
 # Creating NAT Gateway
 resource "aws_nat_gateway" "NAT_gateway" {
   allocation_id = aws_eip.Elastic_IP.id
-  subnet_id     = aws_subnet.Private_RT.id
+#   subnet_id     = aws_subnet.Private_RT.id
 
   tags = {
     Name = "NAT Gateway"
